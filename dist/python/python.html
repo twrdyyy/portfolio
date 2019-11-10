@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>basics slides</title>
+<title>python-prez slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13342,119 +13342,26 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="BIT-AI">BIT AI<a class="anchor-link" href="#BIT-AI">&#182;</a></h1><p><img src="./img/meme1.jpg"></p>
-
+<h1 id="Basic-Python">Basic Python<a class="anchor-link" href="#Basic-Python">&#182;</a></h1>
 </div>
 </div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Getting-started">Getting started<a class="anchor-link" href="#Getting-started">&#182;</a></h2><hr>
-<p>First off all, you need to set up environment for <strong>creating</strong> and <strong>training</strong> your models,
-so let's do it!</p>
-<p><strong>WARNING</strong>: I recomend you to use <strong>unix-based system</strong> (Ubuntu, Mint, Fedora, MacOS etc.)</p>
-<p>If you are ready, simply click <em>Ctrl+Alt+T</em> to open the terminal</p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Check-your-python-version,-simply-type-in-terminal:">Check your python version, simply type in terminal:<a class="anchor-link" href="#Check-your-python-version,-simply-type-in-terminal:">&#182;</a></h4><hr>
-
-<pre><code>    $ python3</code></pre>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>You should see sometihng like this:</p>
-
-<pre><code>Python 3.7.3 (default, Aug 20 2019, 17:04:43) 
-[GCC 8.3.0] on linux
-Type "help", "copyright", "credits" or "license" for more 
-information.
-&gt;&gt;&gt;</code></pre>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="If-your-version-of-Python-is-3-or-higher-you-can-install-pip-module">If your version of <em>Python</em> is 3 or higher you can install <strong>pip</strong> module<a class="anchor-link" href="#If-your-version-of-Python-is-3-or-higher-you-can-install-pip-module">&#182;</a></h4><hr>
-
-<pre><code>    $ sudo apt-get install python3-pip</code></pre>
-<p>Now you can use pip to install <em>Python</em> modules, but first clone BIT_AI github repository</p>
-
-<pre><code>    $ git clone https://github.com/aghbit/BIT_AI.git
-    $ cd BIT_AI</code></pre>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Great!-Now-you-are-ready-to-install-necessary-Python-modules">Great! Now you are ready to install necessary <em>Python</em> modules<a class="anchor-link" href="#Great!-Now-you-are-ready-to-install-necessary-Python-modules">&#182;</a></h4><hr>
-<p>Type in terminal</p>
-
-<pre><code>    $ python3 -m pip install -r requirements.txt</code></pre>
-<p>Check if everything is correct, try to import: <em>numpy</em>, <em>tensorflow</em>, <em>matplotlib</em>, <em>sklearn</em></p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Now-let's-install-jupyter!">Now let's install jupyter!<a class="anchor-link" href="#Now-let's-install-jupyter!">&#182;</a></h4><hr>
-
-<pre><code>{bash}
-    $ sudo apt-get install jupyter</code></pre>
-<p>And of course you should check if jupyter works</p>
-
-<pre><code>{bash}
-    $ jupyter notebook</code></pre>
-<p><strong>Hint</strong> Type <em>Ctrl+c</em> to stop jupyter server :)</p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Another-way-to-use-jupyter-notebook-is-docker">Another way to use jupyter notebook is docker<a class="anchor-link" href="#Another-way-to-use-jupyter-notebook-is-docker">&#182;</a></h4><hr>
-<p>First time:</p>
-
-<pre><code>{bash}
-$ docker run -it -p port_on_host:8888 --name container_name jupyter/scipy-notebook</code></pre>
-<p>Otherwise:</p>
-
-<pre><code>  $ docker start -i container_name</code></pre>
-<p>to enter notebook go to browser and type <a href="http://localhost:$">http://localhost:$</a><port>$/?token=$<token>$</p>
-
+<h2 id="Variables">Variables<a class="anchor-link" href="#Variables">&#182;</a></h2>
 </div>
 </div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
-
-<span class="kn">import</span> <span class="nn">warnings</span>
-<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;some string&quot;</span>
+<span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;string as well &#39;</span>
+<span class="n">b_c</span> <span class="o">=</span> <span class="s1">&#39;some string&#39;</span>
 </pre></div>
 
     </div>
@@ -13462,49 +13369,28 @@ $ docker run -it -p port_on_host:8888 --name container_name jupyter/scipy-notebo
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-<span class="n">arr</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[8]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([[[0., 0., 0.],
-        [0., 0., 0.]]])</pre>
-</div>
-
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Python jest dynamicznie typowanym językiem, czyli:</p>
 
 </div>
 </div>
-
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">1.4</span><span class="p">,</span> <span class="mf">1.4</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;g--&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;r:&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;b^&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span> <span class="c1"># type służy do wyznaczania typu podanego argumentu</span>
+<span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;asd&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13520,14 +13406,15 @@ $ docker run -it -p port_on_host:8888 --name container_name jupyter/scipy-notebo
     <div class="prompt"></div>
 
 
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-"
->
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+&lt;class &#39;int&#39;&gt;
+asd
+&lt;class &#39;str&#39;&gt;
+[1, 2, 3]
+&lt;class &#39;list&#39;&gt;
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -13537,7 +13424,35 @@ $ docker run -it -p port_on_host:8888 --name container_name jupyter/scipy-notebo
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./img/meme4.jpg"></p>
+<h2 id="if">if<a class="anchor-link" href="#if">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>if</strong> ma składnie podobną do C/C++:</p>
+<pre>if condition :
+    kod
+elif condition : (opcjonalne)
+    kod
+else: (opcjonalne)
+    kod </pre>
+***lub***
+<pre>if(condition):
+    kod
+elif(condition): (opcjonalne)
+    kod
+else: (opcjonalne)
+    kod </pre>
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>one line <strong>if</strong>:</p>
+<p><pre>code if condition else code</p>
 
 </div>
 </div>
@@ -13545,10 +13460,1599 @@ $ docker run -it -p port_on_host:8888 --name container_name jupyter/scipy-notebo
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="That's-all!-You-are-ready-to-learn-some-Machine-Learning!">That's all! You are ready to learn some <strong>Machine Learning</strong>!<a class="anchor-link" href="#That's-all!-You-are-ready-to-learn-some-Machine-Learning!">&#182;</a></h2>
+<h3 id="Operatory-por&#243;wnania:">Operatory por&#243;wnania:<a class="anchor-link" href="#Operatory-por&#243;wnania:">&#182;</a></h3>
 </div>
 </div>
-</div></section></section>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>== - operator równości <br/>
+!= - nierówność <br/>
+&lt;, &gt;, &gt;=, &lt;= - ...</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;string&quot;</span>
+<span class="n">b_c</span> <span class="o">=</span> <span class="s2">&quot;string&quot;</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">b</span> <span class="o">==</span> <span class="n">b_c</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;są równe&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;nie są równe&quot;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="n">b</span> <span class="o">!=</span> <span class="s2">&quot;bit infra&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;super&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>są równe
+super
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="operatory-logiczne:">operatory logiczne:<a class="anchor-link" href="#operatory-logiczne:">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong><em>and</em></strong> - operator koniunkcji (&amp;&amp; w C++) <br/>
+<strong><em>or</em></strong> - operator alternatywy (|| w C++) <br/>
+<strong>*not</strong> - operator negacji (! w C++)</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span>
+
+<span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">==</span> <span class="s1">&#39;1&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nie OK&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>OK
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="P&#281;tle">P&#281;tle<a class="anchor-link" href="#P&#281;tle">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="while">while<a class="anchor-link" href="#while">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<pre>while(condition):
+    kod</pre>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+2
+3
+4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="for">for<a class="anchor-link" href="#for">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>for pętla która jest pętlą która iteruje po czymś, np. :</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+2
+3
+4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>w ogólnym przypadku: <br/></p>
+<p><pre> for zmienna in iterable_object:
+    kod</pre><br/></p>
+<p>Także możemy iterować dowolną ilością zmiennych po kolekcjach o których niżej</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)]</span>
+
+<span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 2
+3 4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Kolekcje">Kolekcje<a class="anchor-link" href="#Kolekcje">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>list - zwykła tablica <br/>
+tuple - ciąg <br/>
+dict - słownik (HashMap(java), unordered_map(C++)) <br/>
+set - zbiór (HashSet(java), unordered_set(C++)) <br/></p>
+
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="c1"># list()</span>
+<span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">24</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="ow">in</span> <span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[4, 3, 5, 6, 1, 2]
+[24, 3, 5, 6, 1, 2]
+6
+2
+[24, 3, 5, 6, 1]
+24
+True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="c1">#a[1] = 3 # typles are immutable throws TypeError</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="ow">in</span> <span class="n">a</span><span class="p">)</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c1">#converte to list</span>
+<span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;tuple&#39;&gt;
+1
+False
+[1, 3]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="n">a</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="c1"># a.remove(&#39;a&#39;) # throws an KeyError</span>
+<span class="k">if</span><span class="p">(</span><span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="n">a</span><span class="p">):</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;there is no a&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;a&#39;, &#39;b&#39;}
+{&#39;b&#39;}
+there is no a
+1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+<span class="n">a</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;para 1&quot;</span>
+<span class="n">a</span><span class="p">[(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)]</span> <span class="o">=</span> <span class="s2">&quot;para 2&quot;</span>
+
+<span class="n">keys</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">keys</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="ow">in</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="ow">in</span> <span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)])</span>
+<span class="k">del</span> <span class="n">a</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)]</span>
+<span class="c1">#print(a[(1,2)]) # throws an KeyError</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">keys</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dict_keys([(1, 2), (4, 5)])
+dict_items([((1, 2), &#39;para 1&#39;), ((4, 5), &#39;para 2&#39;)])
+True
+False
+para 1
+dict_keys([(4, 5)])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Tworzenie-tablic-wielowymiarowych">Tworzenie tablic wielowymiarowych<a class="anchor-link" href="#Tworzenie-tablic-wielowymiarowych">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Do tego urzywamy <strong><em>generatorów</em></strong>, mają oni postać:<br/>
+$[ zmienna<em>zapisywana for iterator/lub '</em>' in iterable_object ] <br/> np.:</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[[</span><span class="n">j</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[], [0], [0, 1], [0, 1, 2], [0, 1, 2, 3]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Funkcje">Funkcje<a class="anchor-link" href="#Funkcje">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<pre>def function_name(parameters divided by comma):
+    kod</pre>
+</div>
+</div>
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">b</span><span class="o">+</span><span class="n">c</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">r</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[56]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>5</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func2</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="n">func2</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5
+None
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">funcZ</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    
+    <span class="k">def</span> <span class="nf">funcW</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">b</span><span class="o">*</span><span class="n">a</span>
+    
+    <span class="k">return</span> <span class="n">funcW</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_f</span> <span class="o">=</span> <span class="n">funcZ</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">my_f</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[60]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>20</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">funcW</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-61-529d2743ae28&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>funcW<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;funcW&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Importowanie-bibliotek">Importowanie bibliotek<a class="anchor-link" href="#Importowanie-bibliotek">&#182;</a></h2>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="import-library_name">import library_name<a class="anchor-link" href="#import-library_name">&#182;</a></h4>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">a</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[62]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([1, 2])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="import-library_name-as-alias">import library_name as alias<a class="anchor-link" href="#import-library_name-as-alias">&#182;</a></h4>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">a</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[63]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([1, 2])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="from-library_name-import-function1,-function2">from library_name import function1, function2<a class="anchor-link" href="#from-library_name-import-function1,-function2">&#182;</a></h4>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span><span class="p">,</span> <span class="n">linspace</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">a</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1.         1.08163265 1.16326531 1.24489796 1.32653061 1.40816327
+ 1.48979592 1.57142857 1.65306122 1.73469388 1.81632653 1.89795918
+ 1.97959184 2.06122449 2.14285714 2.2244898  2.30612245 2.3877551
+ 2.46938776 2.55102041 2.63265306 2.71428571 2.79591837 2.87755102
+ 2.95918367 3.04081633 3.12244898 3.20408163 3.28571429 3.36734694
+ 3.44897959 3.53061224 3.6122449  3.69387755 3.7755102  3.85714286
+ 3.93877551 4.02040816 4.10204082 4.18367347 4.26530612 4.34693878
+ 4.42857143 4.51020408 4.59183673 4.67346939 4.75510204 4.83673469
+ 4.91836735 5.        ]
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[64]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([1, 2])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="from-library_name-import-function1-as-alias,-function2-as-alias">from library_name import function1 as alias, function2 as alias<a class="anchor-link" href="#from-library_name-import-function1-as-alias,-function2-as-alias">&#182;</a></h4>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">array</span> <span class="k">as</span> <span class="n">ar</span><span class="p">,</span> <span class="n">linspace</span> <span class="k">as</span> <span class="n">ls</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">ar</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ls</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">a</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1.         1.08163265 1.16326531 1.24489796 1.32653061 1.40816327
+ 1.48979592 1.57142857 1.65306122 1.73469388 1.81632653 1.89795918
+ 1.97959184 2.06122449 2.14285714 2.2244898  2.30612245 2.3877551
+ 2.46938776 2.55102041 2.63265306 2.71428571 2.79591837 2.87755102
+ 2.95918367 3.04081633 3.12244898 3.20408163 3.28571429 3.36734694
+ 3.44897959 3.53061224 3.6122449  3.69387755 3.7755102  3.85714286
+ 3.93877551 4.02040816 4.10204082 4.18367347 4.26530612 4.34693878
+ 4.42857143 4.51020408 4.59183673 4.67346939 4.75510204 4.83673469
+ 4.91836735 5.        ]
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[65]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([1, 2])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong><em> warning </em></strong>: can cause a mental diseases</p>
+<h4 id="from-library_name-import-*">from library_name import *<a class="anchor-link" href="#from-library_name-import-*">&#182;</a></h4><p>no examples for this s**t</p>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Classes">Classes<a class="anchor-link" href="#Classes">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">ClassName</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="n">a</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span>
+    
+    <span class="k">def</span> <span class="nf">class_method</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span>
+    
+    <span class="k">def</span> <span class="nf">method2</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+=</span> <span class="n">a</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">+=</span> <span class="n">b</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">class_object1</span> <span class="o">=</span> <span class="n">ClassName</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">class_object2</span> <span class="o">=</span> <span class="n">class_object1</span>
+<span class="n">class_object3</span> <span class="o">=</span> <span class="n">ClassName</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">class_object1</span><span class="o">.</span><span class="n">class_method</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[67]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>5</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">class_object1</span><span class="o">.</span><span class="n">method2</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[68]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>7</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">class_object1</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="n">class_object1</span><span class="o">.</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3 4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">class_object2</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="n">class_object2</span><span class="o">.</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3 4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">class_object3</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="n">class_object3</span><span class="o">.</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2 3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Print">Print<a class="anchor-link" href="#Print">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;String&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;String&quot;</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="s2">&quot;String&quot;</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;no chyba nie&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+String
+1 String
+no chyba nie
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="troche-lepiej">troche lepiej<a class="anchor-link" href="#troche-lepiej">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="print-(-f-&quot;-{-zmienna-}-&quot;-)">print ( <strong>f</strong> " <strong>{</strong> zmienna <strong>}</strong> " )<a class="anchor-link" href="#print-(-f-&quot;-{-zmienna-}-&quot;-)">&#182;</a></h4>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;String&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="si">{num}</span><span class="s2"> </span><span class="si">{string}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 String
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="albo-z-.format">albo z .format<a class="anchor-link" href="#albo-z-.format">&#182;</a></h3>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="print-(-&quot;-{-0-}-...-{-1-}-...-{-n-}&quot;.format(-lista-argument&#243;w-)-)">print ( " { 0 } ... { 1 } ... { n }".format( lista argument&#243;w ) )<a class="anchor-link" href="#print-(-&quot;-{-0-}-...-{-1-}-...-{-n-}&quot;.format(-lista-argument&#243;w-)-)">&#182;</a></h4><p>*len(lista argumentow) = n</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;String&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2"> </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">string</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 String
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="*args">*args<a class="anchor-link" href="#*args">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[91]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;a = </span><span class="si">{a}</span><span class="se">\n</span><span class="s2">b = </span><span class="si">{b}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>a = 4
+b = 3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[79]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">args</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[80]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[2, 3]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fun_arg</span><span class="p">(</span><span class="o">*</span><span class="n">arg</span><span class="p">):</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Item | index&quot;</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="si">{item}</span><span class="s2"> | </span><span class="si">{index}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fun_arg</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Item | index
+1 | 0
+2 | 1
+3 | 2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="**kwargs">**kwargs<a class="anchor-link" href="#**kwargs">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fun</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;</span><span class="si">{key}</span><span class="s2"> = </span><span class="si">{value}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">fun</span><span class="p">(</span><span class="n">BIT</span><span class="o">=</span><span class="s2">&quot;AI&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>BIT = AI
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Lambda">Lambda<a class="anchor-link" href="#Lambda">&#182;</a></h2>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>lambda zmienna : funkcja</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fun</span> <span class="o">=</span> <span class="p">(</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="p">[</span><span class="n">fun</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tab</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[85]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 4, 9]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">612</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
+
+<span class="n">tab</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+<span class="n">tab</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[87]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[612, 4, 5, 5, 7, 8]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section></section>
 </div>
 </div>
 
