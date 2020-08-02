@@ -2,6 +2,6 @@
 
 Welcome to my website project repository
 
-## Check
+## Make sure to check website
 
 twrdyyy.github.io/portfolio
