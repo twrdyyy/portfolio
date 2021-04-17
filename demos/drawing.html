@@ -118,7 +118,7 @@
         <script>
             var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
             if (isMobile) {
-              $('#paint').css({'width': '60%'});
+              $('#paint').css({'width': '80%'});
               $('#number').css({'width': '60%', 'font-size': '240px'});
               $('#clear').css({'font-size': '50px'});
             } else {
@@ -146,7 +146,7 @@
               mouse.y = e.pageY - this.offsetTop;
             }, false);
 
-            context.lineWidth = isMobile ? 40 : 12;
+            context.lineWidth = isMobile ? 20 : 12;
             context.lineJoin = 'round';
             context.lineCap = 'round';
             context.strokeStyle = '#000000';
@@ -196,7 +196,7 @@
                 clientY: touch.clientY
               }));
             }, false);
-
+                        
             var predict = function(input) {
                 if(window.model) {
                     window.model.predict([tf.tensor(input)
@@ -208,7 +208,6 @@
                       $('#number').html(predicted);
                     });
                 } else {
-                    // $('#number').html('2');
                     setTimeout(function(){predict(input)}, 50);
                 }
             }

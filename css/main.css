@@ -373,6 +373,17 @@ div.menu-braning.show {
     margin-right: 0rem;
   }
 
+  main#about h1 {
+    height: 100%;
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
   .projects {
     grid-template-columns: fr;
   }
