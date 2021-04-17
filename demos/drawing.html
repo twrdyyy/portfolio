@@ -83,7 +83,6 @@
         text-align: center;
       }
       #number {
-        border: 3px solid black;
         margin: auto;
         margin-top: 30px;
         text-align: center;
@@ -146,7 +145,7 @@
               mouse.y = e.pageY - this.offsetTop;
             }, false);
 
-            context.lineWidth = isMobile ? 20 : 12;
+            context.lineWidth = isMobile ? 12 : 12;
             context.lineJoin = 'round';
             context.lineCap = 'round';
             context.strokeStyle = '#000000';
@@ -197,6 +196,7 @@
               }));
             }, false);
                         
+
             var predict = function(input) {
                 if(window.model) {
                     window.model.predict([tf.tensor(input)
