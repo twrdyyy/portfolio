@@ -60,12 +60,14 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.5.2/dist/tf.min.js"></script>
     <style>
-      body {
-        touch-action: none; 
-      }
       h1 {
         margin: 50px;
         font-size: 70px;
+        text-align: center;
+      }
+      h3 {
+        margin: 20px;
+        font-size: 20px;
         text-align: center;
       }
       #paint {
@@ -78,9 +80,8 @@
         text-align: center;
       }
       #number {
-        border: 3px solid black;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 10px;
         text-align: center;
         vertical-align: middle;
       }
@@ -93,8 +94,6 @@
     </style>
 
     <main id="Demo">
-        <h2 class="lg-heading">Guess what
-            <span class="text-secondary">I'm drawing</h2>
         <h3 class="sm-heading">
             Start drawing in the box below
         </h3>
@@ -115,9 +114,9 @@
         <script>
             var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
             if (isMobile) {
-              $('#paint').css({'width': '60%'});
-              $('#number').css({'width': '60%', 'font-size': '240px'});
-              $('#clear').css({'font-size': '50px'});
+              $('#paint').css({'width': '80%'});
+              $('#number').css({'width': '30%', 'font-size': '60px'});
+              $('#clear').css({'font-size': '25px'});
             } else {
               $('#paint').css({'width': '300px'});
               $('#number').css({'width': '150px', 'font-size': '120px'});
@@ -143,7 +142,7 @@
               mouse.y = e.pageY - this.offsetTop;
             }, false);
 
-            context.lineWidth = isMobile ? 40 : 12;
+            context.lineWidth = isMobile ? 12 : 12;
             context.lineJoin = 'round';
             context.lineCap = 'round';
             context.strokeStyle = '#000000';
@@ -175,16 +174,32 @@
             tf.loadLayersModel('./drawing/model.json').then(function(model){
                 window.model = model;
             });
+                        
+            function preventDefault(e) {
+                e.preventDefault();
+            }
+            function disableScroll() {
+                document.body.addEventListener('touchmove', preventDefault, { passive: false });
+            }
+            function enableScroll() {
+                document.body.removeEventListener('touchmove', preventDefault);
+            }
+                
+            window.blockMenuHeaderScroll = false;
 
             canvas.addEventListener('touchstart', function (e) {
-              var touch = e.touches[0];
-              canvas.dispatchEvent(new MouseEvent('mousedown', {
-                clientX: touch.clientX,
-                clientY: touch.clientY
-              }));
+                disableScroll();
+                window.blockMenuHeaderScroll = true;
+                var touch = e.touches[0];
+                canvas.dispatchEvent(new MouseEvent('mousedown', {
+                    clientX: touch.clientX,
+                    clientY: touch.clientY
+                  }));
             }, false);
             canvas.addEventListener('touchend', function (e) {
-              canvas.dispatchEvent(new MouseEvent('mouseup', {}));
+                enableScroll(); 
+                window.blockMenuHeaderScroll = false;
+                canvas.dispatchEvent(new MouseEvent('mouseup', {}));
             }, false);
             canvas.addEventListener('touchmove', function (e) {
               var touch = e.touches[0];
@@ -193,6 +208,7 @@
                 clientY: touch.clientY
               }));
             }, false);
+                        
 
             var predict = function(input) {
                 if(window.model) {
@@ -205,7 +221,6 @@
                       $('#number').html(predicted);
                     });
                 } else {
-                    // $('#number').html('2');
                     setTimeout(function(){predict(input)}, 50);
                 }
             }
@@ -220,6 +235,7 @@
                 context.clearRect(0, 0, canvas.width, canvas.height);
                 context.fillRect(0, 0, canvas.width, canvas.height);
                 $('#number').html('');
+                $("html, body").animate({ scrollTop: 0 }, "slow");
             });
             
         </script>
